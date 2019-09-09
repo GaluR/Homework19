@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" i
+          ntegrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <style>
+        .body {
+            margin-right: 450px;
+            margin-left: 450px;
+        }
+        .name {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+
+</head>
+<body>
+<div class="body">
+    <h1>Rejestracja</h1>
+    <form>
+        <div class="name">
+            <label for="firstName">Imię</label><br/>
+            <input type="text" id="firstName" placeholder="Wpisz imię" name="firstName" class="form-control"><br/>
+
+            <label for="lastName">Nazwisko</label><br/>
+            <input type="text" id="lastName" placeholder="Wpisz nazwisko" name="lastName" class="form-control"><br/>
+            <br/>
+        </div>
+        <br/>
+            <label for="gender">Płeć</label>
+            <input type="radio" id="gender" name="gender" value="Mężczyzna" style="margin-left: 300px"> Mężczyzna<br/>
+            <input type="radio" id="gender1" name="gender1" value="Kobieta" style="margin-left: 335px">     Kobieta<br/>
+        <div class="name">
+            <label for="email">Adres e-mail</label><br/>
+            <input type="email" id="email" placeholder="Wpisz adres email" name="email" class="form-control"><br/>
+
+            <label for="password">Hasło</label><br/>
+            <input type="password" id="password" placeholder="Hasło" name="password"><br/>
+            <figcaption class="figure-caption text-left">Minimum 8 znaków</figcaption>
+            <br/>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="city">Miasto</label>
+                <input type="text" class="form-control" id="city" placeholder="Wpisz miasto" required>
+            </div>
+            <div class="col-md-3 mb-3">
+                <form>
+                    <label for="administration">Województwo</label>
+                    <select id="administration" name="nazwa" class="form-control"><br/>
+                        <option></option>
+                        <option>Dolnośląskie</option>
+                        <option>Łódzkie</option>
+                        <option>Opolskie</option>
+                        <option>Lubelskie</option>
+                        <option>Kujawsko-Pomorskie</option>
+                        <option>Mazowieckie</option>
+                        <option>Wielkopolskie</option>
+                    </select>
+                </form>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="postcode">Kod pocztowy</label>
+                <input type="number" class="form-control" id="postcode" placeholder="Kod pocztowy" required>
+            </div>
+        </div>
+        <input type="checkbox" id="info">Akceptuję <a
+            href="https://pl.wikipedia.org/wiki/Wroc%C5%82aw">regulamin</a></input><br/>
+        <input type="checkbox" id="info1" checked>Wyrażam zgodę na otrzymywanie informacji marketingowych</input><br/>
+
+
+        <button type="button" class="btn btn-secondary btn-lg">Rejestruj</button>
+    </form>
+</div>
+</body>
+</html>
